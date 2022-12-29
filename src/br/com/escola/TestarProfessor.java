@@ -8,6 +8,7 @@ public class TestarProfessor {
 		professor.setNome("Chaves Rodrigues");
 		professor.setTitulacao("Mestre em Ciência da computação");
 		professor.mostrarProfessor();
+		professor.mostrarFuncionario();
 		
 		String prof = professor.getTitulacao();
 		System.out.println(prof);
