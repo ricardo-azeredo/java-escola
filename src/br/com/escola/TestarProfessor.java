@@ -7,6 +7,7 @@ public class TestarProfessor {
 		Professor professor = new Professor();
 		professor.setNome("Chaves Rodrigues");
 		professor.setTitulacao("Mestre em Ciência da computação");
+		professor.definirIdade(41);
 		professor.mostrarProfessor();
 		professor.mostrarFuncionario();
 		

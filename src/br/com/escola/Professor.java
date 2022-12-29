@@ -18,7 +18,7 @@ public class Professor extends Funcionario {
 	 */
 	
 	public void mostrarProfessor() {
-		String professor = "O professor "+ getNome()+" e "+getTitulacao();
+		String professor = "O professor "+ getNome()+" e "+getTitulacao()+ " com a idade "+ this.obterIdade()+" anos";
 		System.out.println(professor);
 	}
 	
