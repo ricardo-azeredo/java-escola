@@ -1,8 +1,9 @@
 package br.com.escola;
 
-public class Aluno {
+public class Aluno implements Pessoa {
 	private String nome;
 	private int matricula;
+	private int idade;
 	
 	public Aluno() {
 		
@@ -15,24 +16,23 @@ public class Aluno {
 	
 	//getter and setter
 	//Mesmo que um setter
-	/*
-	public void difinirNome(String nome) {
+	
+	@Override
+	public void definirNome(String nome) {
 		this.nome = nome;
 	}
 	
-	//getter
+	@Override
 	public String obterNome() {
 		return this.nome;
 	}
-	*/
 	
-	public String getNome() {
-		return this.nome;
-	}
 	
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+	/*
+	 * public String getNome() { return this.nome; }
+	 * 
+	 * public void setNome(String nome) { this.nome = nome; }
+	 */
 	
 	public int getMatricula() {
 		return this.matricula;
@@ -43,9 +43,20 @@ public class Aluno {
 	}
 	//metodos
 	public void mostrarAluno() {
-		String alunosDescricao = "O aluno " + this.nome +" com a matricula "+ this.matricula;
+		String alunosDescricao = "O aluno " + this.nome +" com a matricula "+ this.matricula +
+				" tem idade "+ this.idade + " anos";
 		System.out.println(alunosDescricao);		
 		
+	}
+	
+	
+	@Override
+	public void definirIdade(int idade) {
+		this.idade = idade;
+	}
+	@Override
+	public int obterIdade() {
+		return this.idade;
 	}
 	
 }

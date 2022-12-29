@@ -4,8 +4,9 @@ public class TestaAluno {
 	public static void main(String[] args) {
 		Aluno aluno = new Aluno();
 		
-		aluno.setNome("Ricardo Azeredo");
+		aluno.definirNome("Ricardo Azeredo");
 		aluno.setMatricula(1105);
+		aluno.definirIdade(20);
 		aluno.mostrarAluno();
 		
 		Aluno aluno2 = new Aluno("José das Couves",1106);
